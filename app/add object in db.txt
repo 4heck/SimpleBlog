@@ -1,0 +1,8 @@
+>>> import models
+>>> from app import db
+>>> db.create_all()
+>>> from models import Post
+>>> p=Post(title='Title',body='Body')
+>>> db.session.add(p)
+>>> db.session.commit()
+>>> p
