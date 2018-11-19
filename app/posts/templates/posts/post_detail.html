@@ -6,8 +6,16 @@
 
 {% block content_title %}
 {{ post.title }}
+<br>
+		<h5><div class="tags">
+			{% for tag in tags %}
+			<a href="{{ url_for('posts.tag_detail', slug=tag.slug) }}"><span class="badge badge-primary">{{ tag.name }}</span></a>	
+			{% endfor %}
+		</div></h5>
 {% endblock %}
 
 {% block content %}
-{{ post.body }}
+
+
+	{{ post.body }}
 {% endblock %}
