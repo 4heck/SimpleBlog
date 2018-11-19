@@ -9,5 +9,11 @@
 {% endblock %}
 
 {% block content %}
-	Умный блог
+<div class="jumbotron">
+  <h1 class="display-4">Привет, мир!</h1>
+  <p class="lead">Мы - блог о разработке, администрировании, дизайну, управлению, маркетингу и многом другом...</p>
+  <hr class="my-4">
+  <p>Кликай на кнопку и читай все самое интересное из мира гаджетов, интернета и технологий</p>
+  <a class="btn btn-primary btn-lg" href="{{ url_for('posts.index') }}" role="button">Смотреть посты</a>
+</div>
 {% endblock %}
