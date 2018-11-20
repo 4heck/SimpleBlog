@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 
 {% block title %}
-	Главная
+Главная
 {% endblock %}
 
 {% block content_title %}
-	<h1>Simple Blog</h1>
+Simple Blog
 {% endblock %}
 
 {% block content %}
 <div class="jumbotron">
-  <h1 class="display-4">Привет, мир!</h1>
-  <p class="lead">Мы - блог о разработке, администрировании, дизайну, управлению, маркетингу и многом другом...</p>
-  <hr class="my-4">
-  <p>Кликай на кнопку и читай все самое интересное из мира гаджетов, интернета и технологий</p>
-  <a class="btn btn-primary btn-lg" href="{{ url_for('posts.index') }}" role="button">Смотреть посты</a>
+	<h1 class="display-4">Привет, мир!</h1>
+	<p class="lead">Мы - блог о разработке, администрировании, дизайну, управлению, маркетингу и многом другом :)</p>
+	<hr class="my-4">
+	<p>Кликай на кнопку и читай все самое интересное из мира гаджетов, интернета и технологий</p>
+	<a class="btn btn-primary btn-lg" href="{{ url_for('posts.index') }}" role="button">Читать посты</a>
 </div>
 {% endblock %}
