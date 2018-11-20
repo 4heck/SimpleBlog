@@ -10,10 +10,9 @@
 
 {% block content %}
 {% for post in posts %}
-
-
-<a href="{{ url_for('posts.post_detail', slug=post.slug) }}"> {{ post.title }}</a>
-<hr>
+	<a href="{{ url_for('posts.post_detail', slug=post.slug) }}"> {{ post.title }} </a> 
+    	<span class="badge badge-primary"><a> Новое</a> </span>
+	<hr>
 {% endfor %}
 
 {% endblock %}
