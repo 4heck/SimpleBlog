@@ -5,14 +5,29 @@
 {% endblock %}
 
 {% block content_title %}
-Посты
+	{% if result=="null" %}
+		Посты
+		{% else %}
+		{% if posts=="0" %}
+			<span class="badge badge-danger">По зaпросу <i>"{{ result }}"</i> постов не найдено!</span>
+		{% else %}
+			Посты по запросу <i>"{{ result }}"</i>:
+		{% endif %}
+	{% endif %}
 {% endblock %}
 
 {% block content %}
-{% for post in posts %}
-	<a href="{{ url_for('posts.post_detail', slug=post.slug) }}"> {{ post.title }} </a> 
-    	<span class="badge badge-primary"><a> Новое</a> </span>
-	<hr>
-{% endfor %}
 
+	{% for post in posts %}
+		{% if posts!="0" %}
+			<a href="{{ url_for('posts.post_detail', slug=post.slug) }}"> {{ post.title }} </a> 
+			<hr>
+		{% endif %}
+	{% endfor %}
+
+	<br>
+	Поиск по тегам: 
+	{% for tag in tags %}
+		<a href="{{ url_for('posts.tag_detail', slug=tag.slug) }}"> <span class="badge badge-primary">{{ tag.name }} </span> </a>
+	{% endfor %}
 {% endblock %}
