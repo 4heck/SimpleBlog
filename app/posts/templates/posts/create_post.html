@@ -9,15 +9,21 @@
 {% endblock %}
 
 {% block content %}
-	<div class='col-md-6'>
-		<form action="{{ url_for('posts.create_post') }}" method="POST">
-			{% for field in form %}
-				<div class="form-group">
-					{{ field.label(class='control-label') }}
-					{{ field(class='form-control') }}
-				</div>
-			{% endfor %}
-			<button type="submit" class="btn btn-success">Создать</button>
-		</form>
-	</div>
+<div class='col-md-6'>
+	<form action="{{ url_for('posts.create_post') }}" method="POST">
+		{% for field in form %}
+		<div class="form-group">
+			{{ field.label(class='control-label') }}
+			{{ field(class='form-control') }}
+		</div>
+		{% endfor %}
+		Теги: 
+		{% for tag in tags %}
+		<input type="radio" id="choice" value={{ tag.name }}>
+		<label for="choice"><a href="{{ url_for('posts.tag_detail', slug=tag.slug) }}"> <span class="badge badge-primary">{{ tag.name }} </span> </a></label>
+		{% endfor %}
+		<br><br>
+		<button type="submit" class="btn btn-success">Создать</button>
+	</form>
+</div>
 {% endblock %}
