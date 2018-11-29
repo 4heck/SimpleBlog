@@ -20,7 +20,7 @@
 		Теги: 
 		{% for tag in tags %}
 		<input type="radio" id="choice" value={{ tag.name }}>
-		<label for="choice"><a href="{{ url_for('posts.tag_detail', slug=tag.slug) }}"> <span class="badge badge-primary">{{ tag.name }} </span> </a></label>
+		<label for="choice"><span class="badge badge-primary">{{ tag.name }} </span></label>
 		{% endfor %}
 		<br><br>
 		<button type="submit" class="btn btn-success">Создать</button>

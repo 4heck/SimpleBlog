@@ -6,6 +6,7 @@ from .forms import PostForm
 from app import db
 from flask import redirect
 from flask import url_for
+from datetime import datetime
 
 posts = Blueprint('posts', __name__, template_folder='templates')
 
@@ -24,7 +25,8 @@ def create_post():
 		return redirect(url_for('posts.index'))
 
 	form = PostForm()
-	return render_template('posts/create_post.html', form=form)
+	tags =Tag.query.all()
+	return render_template('posts/create_post.html', form=form, tags=tags)
 
 @posts.route('/')
 def index():
@@ -45,6 +47,7 @@ def index():
 def post_detail(slug):
 	post = Post.query.filter(Post.slug==slug).first()
 	tags = post.tags
+	#date = datetime.fromtimestamp(post.created)
 	return render_template('posts/post_detail.html', post=post, tags=tags)
 
 @posts.route('/tag/<slug>')
