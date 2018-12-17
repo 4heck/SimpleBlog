@@ -54,7 +54,7 @@ def api_post_update(id):
     post_to_update.title = updated_post["title"]
     post_to_update.generate_slug()
     post_to_update.body = updated_post["body"]
-    db.session.add(updated_post)
+    db.session.save(updated_post)
     db.session.commit()
     post = post_to_update
     post_json = {"id": post.id, "title": post.title, "body": post.body, "slug": post.slug, "created": post.created}
