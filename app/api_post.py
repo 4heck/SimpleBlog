@@ -55,10 +55,17 @@ def api_post_update(id):
         abort(404)
     data = json.loads(request.get_data())
     post_to_update = posts_to_update[0]
+<<<<<<< HEAD
     post_to_update = db.session.query(Post).filter_by(id = id).first()
     post_to_update.title = data['title']
     post_to_update.body = data['body']
     post_to_update.slug = data['slug']
     post_to_update.created = data['created']
+=======
+    post_to_update.title = updated_post["title"]
+    post_to_update.generate_slug()
+    post_to_update.body = updated_post["body"]
+    db.session.save(updated_post)
+>>>>>>> 13d7380096f16de50d53aa2ea1abd291dc9fbab2
     db.session.commit()
     return jsonify(post_to_update.to_dict())
