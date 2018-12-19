@@ -1,0 +1,393 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.6
+-- Dumped by pg_dump version 10.6
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Data for Name: alembic_version; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.alembic_version VALUES ('fe208550f61b');
+
+
+--
+-- Data for Name: post; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.post VALUES (30, 'Настоящая битва экстрасенсов', 'Настоящая-битва-экстрасенсов', 'Джеймс Рэнди, канадско-американский иллюзионист, почти 25 лет работал фокусником на эстраде и телевидении, после чего активно взялся за разоблачение различных экстрасенсов, медиумов и прочих телепатов. В 1964 он предложил награду в тысячу долларов любому, кто сможет доказать свои паранормальные способности научно обоснованным способом.
+
+
+
+Сотни магов, телекинетиков и целителей пытались пройти его тесты, и все были разоблачены. Известный телекинетик Джеймс Хайдрик пытался получить приз, показав, что может двигать страницы силой мысли, но Рэнди доказал, что тот просто дует на бумагу. Женщина, утверждавшая, что может лечить, используя "энергию кристаллов", не смогла отличить их от крысиного яда, завёрнутого в мешочек. Известный целитель Питер Попофф заработал тысячи долларов "разговаривая с Богом" и "исцеляя болезни", но Рэнди обнаружил, что ему диктуют информацию о "клиентах" на скрытый наушник. Рэнди записал передачи полицейским сканером и разоблачил целителя по телевидению, заявив, что "частота Бога оказалась 39,170 МГц".
+
+
+
+К 1996 году призовой фонд вырос до миллиона долларов, но никто так и не смог доказать наличие хоть каких-то паранормальных способностей.', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (31, 'В общежитии московского университета задержали 40 студентов с Кавказа, «установивших свои порядки»', 'В-общежитии-московского-университета-задержали-40-студентов-с-Кавказа---установивших-свои-порядки-', '40 студентов Российского государственного геологоразведочного университета им. Серго Орджоникидзе МГРИ-РГГРУ были задержаны сотрудниками Росгвардии. Представители южной республики установили в общежитии «свои порядки»
+Бойцы Росгвардии начали зачистку и проверку паспортного режима. Под пресс попали студенты из Ингушетии, которые установили свои порядки: „Кто не с нами, тот под нами“, демонстративное ношение оружия, вот это все», — сообщается в публикации.
+
+
+
+Правоохранители провели операцию в общежитии утром понедельника, 17 декабря, передает «Царьград». По снимкам, которые появились в Сети после сообщений о «беспределе», заметно, что в комнатах у студентов были найдены пистолеты, служебные удостоверения, республиканские флаги и гербы.
+
+
+
+Получить официальный комментарий корреспонденту «URA.RU» от представителей вуза не удалось. Сотрудники отдела по связям с общественностью и руководства общежития не ответили.
+
+
+
+В ходе этих рейдов проверялось законность пребывания граждан в общежитиях и установление их личностей. Однако, результаты превзошли ожидания. У 20-ти таких «студентов» ингушей были найдены при себе наркотические вещества и «травматы». Они задержаны. Правоохранители занялись проверкой установленных фактов.', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (28, 'Будьте внимательны', 'Будьте-внимательны', 'Сегодня вечером возвращался с работы, припарковал машину, вышел, смотрю в телефоне, что надо купить в магазине у дома. Ко мне медленной шаркающей походкой подходит пожилой человек и произносит что-то типа: «алмпорпм ирроп опрорр ралаао. Ропооьи о 50 рублей». Я подумал, что бомж какой-то просит денег, но что-то меня насторожило. Я спросил: «Не понял вас. Что?». Он повторил снова что-то нечленораздельное. Переспросил несколько раз. Непонятно вообще отвечает. Я подумал про инсульт. Спросил нужна ли ему помощь. Он ответил невнятно. Я спросил надо ли ему кому-то позвонить. Ответ нечленораздельный. Звоню 112, объясняю ситуацию, переключают на скорую. Описал им все, сказали ждать скорую. Тут мне перезвонили из полиции и описали приметы человека, я подтвердил их. Мне сказали, что он потерялся и его ищут со вчерашнего дня. Попросили найти у него записку с  номером жены и сообщить ей. Позвонил ей, обрадовал. Приехала скорая, забрали его к себе в машину. Потом мне еще звонили несколько раз из моего отделения полиции и из того, где он потерялся. В общем скорая его забрала. Хеппи энд и все такое. Но я не могу отделаться от мысли, что если я его чуть не послал, то маловероятно что ему кто-то помог бы ночью вдали от оживлённых улиц. В таком состоянии он бы вряд ли выжил на улице. Не бросайте людей в беде. Оценивайте ситуацию.', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (29, 'Про плохих учеников в Швеции', 'Про-плохих-учеников-в-Швеции', 'Случайная история из Швеции, рассказал мой коллега-швед за обедом, значит тег моё :)
+
+
+
+Часто всплывают истории как дети в школе доводят учителей, и те им ничего сделать не могут. Естественно проблема весьма распространена по всему миру.
+
+
+
+В Швеции, практически цитадели толерантности - такая же фигня. И вот относительно недавно был случай - ученик довел учителя, мешал вести урок, орал, баловался, не реагировал и далее по списку.
+
+
+
+Учитель вскипел, взял в одну руку ученика, во вторую его учебники, вышвырнул из класса и сказал - будешь тут сидеть и читать от страницы Х до страницы Y.
+
+
+
+Естественно был скандал. Как можно, нельзя трогать, возмущенная общественность, бла бла. И был суд.
+
+Дело в том, что по закону в Швеции недопустимо лишать детей образования.
+
+И вот что постановил суд - ребенок не пострадал - его просто вывели из класса, хоть и с применением силы, но это было разумное применение силы, которое преступлением не является.
+
+Ребенка не лишили права на образование - ему вручили книжки и сказали учиться, просто не в классе.
+
+Учителя оправдали.
+
+
+
+Теперь это прецедент.
+
+Такие дела :)', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (32, 'Как я эротическим массажистом работал)', 'Как-я-эротическим-массажистом-работал-', 'Дело было давно, мне было лет 25. Я хотел заняться новой деятельностью, не связанной с компьютером, но связанной с общением с людьми.
+
+
+
+Начиналось все просто, прошел курсы, прошел практику, начал чувствовать тело и открыл свой кабинет в центре города.
+
+Но работы не было. Сделал себе сайт, написал туда с десяток своих мыслей о массаже. Рекламу в Гугле и Яндексе отклонили, а вывеску повесть возможности не представлялось. Флаера раздавал, результата ноль.
+
+
+
+Сижу в кабинете изучаю анатомию... И вдруг приходит женщина. (Сайт оказывается по СЕО продвинулся) Хочет антицеллюлитный массаж. Слово за слово, удивилась моим методам, но через два дня пришла снова. Так я целый месяц работал с одной дамой.
+
+
+
+И о чудо, она рассказала одним, те другим, и ко мне пошли люди.
+
+
+
+И в какой-то момент я осознал, что многие ходят не столько за массажем, а сколько душевно поговорить. И в разговоре, одна из клиенток спросила, а не делаю ли я интимный массаж?
+
+
+
+В тот момент я если честно немного испугался. Я мнил из себя приличного целомудренного человека)))
+
+Я ушел в отказ, но... Вопрос остался у меня в на уме.
+
+
+
+Конечно к тому моменту я уже худо/бедно зарабатывал на аренду, но заработка все равно не хватало. И жить даже приходилось в кабинете, благо все необходимое там было. (Переехал из другого города где небыло родственников и друзей у кого можно было кости кинуть)
+
+
+
+Думал я думал и начал изучать, как доставить женщине море удовольствия руками и маслом. Использовать другие части тела для этого я был не намерен;)
+
+
+
+Через пару недель я уже и сайт закончил, где придумал такие виды массажа, все со знаком VIP: Массаж релакс, массаж тантрический, массаж йони.
+
+
+
+Сайт очень быстро продвинулся по СЕО, видать в нашем городе с нормальными сайтами тогда проблема была. Статьи я сам к нему написал, очень душевные, чувственные.
+
+
+
+И начались звонки...
+
+
+
+Я беру трубку(отдельный номер), слышу мужской голос:
+
+- вы массажист?
+
+- да, я, только я массаж женщинам делаю.
+
+- да, я знаю, я хочу жене своей массаж подарить.
+
+- хм, хорошо, - почти не растерялся я.
+
+
+
+После пятнадцати минут разговора, где мы четко проговорили мою задачу и границы поведения, назначили время для действа.
+
+
+
+Меня встретили, я переоделся в свое кимоно и прошел в комнату где уже горели благовония, горел приглушённый свет, на кровати лежала девушка с повязкой на глазах и с наушниками в ушах.
+
+
+
+Даже сейчас помню как меня в первый раз трясло, руки плохо слушались от волнения. Я ушел расстроенный, поскольку несмотря на то, что я полтора часа делал расслабляющий массаж, чтобы девушка ко мне привыкла, за оставшиеся пол часа до оргазма я ее не довел. Даже денег не хотел брать, но рука сама взяла три зелёных купюры в рублевом эквиваленте и я ушел предаваться унынию.
+
+
+
+А с утра звонок, звонит этот заказчик. Столько благодарности я слышал впервые в жизни. Оказалось, что секс у них был после моего массажа волшебный, и отношения приобрели новую силу, и столько ярких эмоций и т.д. Я аж героем себя почувствовал)
+
+
+
+И должен заметить, что звонили в основном мужчины. Кто хотел замять вину или измену, кто не хотел сам удовольствие женщине доставить, были и весьма пикантные предложения...
+
+
+
+Вскоре я закрыл кабинет, поскольку работал исключительно на выезд по новому профилю и зарабатывал весьма и весьма.
+
+
+
+Довольно быстро я перестал стесняться, и много чего было интересного. Если этот пост зайдет, я расскажу отдельные истории и ситуации в которые я попадал, с пикантными подробностями, но конечно же без имён;)', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (33, 'Мое собеседование', 'Мое-собеседование', 'Когда возникают мысли об увольнении это практически всегда тяжелое решение. Вот и у меня возникло такое желание. Очень надоело ездить по 1.5 часа на работу, сидеть подрядчиком на оборонном заводе. Каждый день как будто оказываешься в 80-ых, интернета нет, мобильная связь запрещена. Да и последние проекты подломили отношения с руководителем. Хотелось найти какую-то удаленную работу. Я программист 1С с двухлетним опытом, и возможность была неиллюзорная.
+
+
+Подал резюме на hh и мне в течении пары дней в первый раз написали. Крупная компания, разработчик программного обеспечения. Прислали тестовое задание, которое было довольно неприятным. Написать сортировки не используя готовых функций сортировки, еще какие-то алгоритмы реализовать, не помню уже. Время "до завтра". Всякий раз меня очень забавляют такие задания, непонятно что они проверяют. Возможно для человека без опыта работы это и актуально, потому что спросить больше нечего. Но по факту это бесполезный тест. 
+
+Я выполнил всё задание и отправил, стал ожидать ответа. Мне ответили, что задание принято и стоит ожидать решения от руководителя. Чтоб вы поняли это было все что я получил. Тестовое задание несколько писем и все. Осталась легкая неудовлетворенность и ощущение наплевательского отношения.
+
+Пока сидел и ждал ответа от гиганта. Мне снова позвонили. На этот раз звонок меня довольно сильно напряг. Компания занимается аутсорсингом (предоставляет работников другим компаниям как услугу), для меня это слово не было знакомо, и что собеседование будет проходить в два этапа по 1-2 часа каждый день, по скайпу. Но голос у сотрудника отдела кадров был на столько воодушевляющий, что страха как-то особо не было. Что любопытно, мне не пришлось даже прогуливать работу, для того чтобы пройти собеседование. Договорился на "после работы". 
+
+Первая сессия была теоретическим собеседованием. Два часа, руководитель отдела и ведущий программист гоняли меня в хвост и в гриву по прикладным вопросам программирования, платформы, базам данных, запросам и всякому-всякому. Мне каким-то образом удалось оставить приятное впечатление  и меня позвали на вторую сессию, где будет практическая часть собеседования. Что удивительно, то и специалисты компании оставили у меня приятное впечатление, так как не чувствовалось, что меня мочат. Люди, как-то с шутками-прибаутками прогнали меня по большинству моих навыков, в режиме блица. Осталось, в общем, приятное впечатление.
+
+', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (34, 'Я не против.', 'Я-не-против-', 'Покупал сегодня пульт для телевизора. Консультант принес нужную модель, покрутил в руках и, увидев ценник, сказал что стоимость изменилась, взял ручку и начал прям на ценнике что-то черкать. Я тут же вспомнил кучу постов на Пикабу о том что ценник = оферта и прочее, прокрутил в голове сценарий предстоящего диалога. Беру пульт в руки и вижу что на ценнике 950 руб. перечеркнуто и написано 650. Отсчитывал деньги примерно в таким лиц', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (35, 'Газета "ВЗГЛЯД" сравнила Пикабу с помойкой.', 'Газета--ВЗГЛЯД--сравнила-Пикабу-с-помойкой-', 'В статье говорится: 
+
+" стала понятна схема «легализации информации» в мировом медиапространстве. В России это делается следующим образом: сперва какой-нибудь компромат на чиновника или бизнесмена размещается на какой-нибудь «помойке» или «сливном бачке» – сайте без лицензии СМИ или телеграм-канале, специализирующемся на подобных вбросах. Потом это со ссылкой на «помойку» перепечатывает малоизвестное СМИ. И уже потом, со ссылкой на малоизвестное – более известное. Подобным образом, например, была организована информационная атака на нового директора Кадастровой палаты РФ Парвиза Тухтасунова, фальшивую биографию которого сперва опубликовали на сайте Pikabu, а потом перепечатали в «МК»."', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (36, 'Средство после бритья', 'Средство-после-бритья', 'Раньше после бритья пользовался разными нивеями-жилеттами. Этим летом по приколу намазался после бритья пантенолом от солнечных ожогов. Вот таким:
+
+ Средство после бритья Бритье, После бритья, Пантенол
+Это что-то с чем-то! Такой мягкости и комфорта моя кожа после бритья никогда ранее не ощущала!
+
+
+
+Достоинства:
+
++ Недорогой (брал на озоне рублей за 200);
+
++ Хватает надолго (полгода пользуюсь, израсходовано пол-баллона);
+
++ Очень хорошо смягчает кожу, заживляет мелкие ранки;
+
++ Обладает слабым приятным ароматом;
+
++ Удобный дозатор (для нанесения надо сделать несколько пшиков, лишнего не выдавишь);
+
++ Быстро впитывается.
+
+
+
+Недостатки:
+
+- Не выявлено.
+
+
+
+Гладкого всем бритья!', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (37, 'По мордасам', 'По-мордасам', 'Я это видела своими глазками: на очень оживлённой проезжей части,молодой человек, лет 2 от роду, выбежал на дорогу,а его маманя болтает с подругами,на пацана ноль внимания,перед ребёнком тормозит машина. Мужик выскакивает, хватает пацана на руки, выходит на тротуар и орёт,мол чей ребёнок, дура-маманя орёт мой. Мужик без разговора бьёт ей по морде, сует ребёнка в руки и уезжает. Вою было..', '2018-12-19 23:41:13.918091');
+INSERT INTO public.post VALUES (38, 'Приятного аппетита!', 'Приятного-аппетита-', 'Мой друг работает в небольшом провинциальном городке врачом скорой помощи. Есть у них такая практика: если больному требуется сложная, но не очень срочная операция, его везут на машине в Москву, ехать часов 7, так что вполне приемлемо. Естественно, это машина скорой помощи и естественно, врачи его сопровождают. До столицы едут обычно быстро и без остановок, а обратно уже расслабленно.
+
+Вот однажды возвращалась из Москвы бригада врачей; пациента отвезли, в Москве пробыли от силы пару часов - и обратно. Едут уже достаточно долго и всем захотелось есть. Тормознули у придорожной харчевни, водитель и фельдшер закрывали машину, а мой друг пошел заказать что-нибудь. В таверне и так было пусто, но когда обслуживающий персонал, состоявший исключительно из представителей южных республик, увидел заходящего к ним доктора, в форме очень сильно напоминающей форму сотрудников санэпидемнадзора, не осталось совсем никого. Переворачивая стулья и выпрыгивая из окон кассир, повар, уборщица и остальные поспешно удалились.
+
+Немного подумав, бригада решила не питаться здесь, а поискать что-то, с более уверенным в себе персоналом.', '2018-12-19 23:41:13.918091');
+
+
+--
+-- Data for Name: post_tags; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.post_tags VALUES (30, 13);
+INSERT INTO public.post_tags VALUES (31, 12);
+INSERT INTO public.post_tags VALUES (32, 16);
+INSERT INTO public.post_tags VALUES (33, 14);
+INSERT INTO public.post_tags VALUES (34, 15);
+INSERT INTO public.post_tags VALUES (35, 15);
+INSERT INTO public.post_tags VALUES (36, 15);
+INSERT INTO public.post_tags VALUES (37, 5);
+INSERT INTO public.post_tags VALUES (38, 16);
+
+
+--
+-- Data for Name: tag; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.tag VALUES (1, 'python', 'python');
+INSERT INTO public.tag VALUES (2, 'java', 'java');
+INSERT INTO public.tag VALUES (3, 'PostgeSQL', 'postgesql');
+INSERT INTO public.tag VALUES (4, 'Django', 'django');
+INSERT INTO public.tag VALUES (5, 'Разное', 'other');
+INSERT INTO public.tag VALUES (12, 'Кавказ', 'Кавказ');
+INSERT INTO public.tag VALUES (13, 'Экстрасенсы', 'Экстрасенсы');
+INSERT INTO public.tag VALUES (14, 'Швеция', 'Швеция');
+INSERT INTO public.tag VALUES (15, 'Кулстори', 'Кулстори');
+INSERT INTO public.tag VALUES (16, 'Лайфхак', 'Лайфхак');
+
+
+--
+-- Data for Name: user; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public."user" VALUES ('Ruslan', 'Mamleev', 'Kazan', 'mamleev.rus@gmail.com', '2018-12-04 19:50:10+03', 1);
+INSERT INTO public."user" VALUES ('Ivan', 'Petrov', 'Moscow', 'petrov.iv@gmail.com', '2018-12-04 19:50:10+03', 2);
+INSERT INTO public."user" VALUES ('Petr', 'Ivanov', 'Orenburg', 'ivanov.petr@gmail.com', '2018-12-04 19:50:10+03', 3);
+INSERT INTO public."user" VALUES ('Danil', 'Ivanov', 'Orel', '123.a@gmail.com', '2018-12-04 19:50:10+03', 4);
+INSERT INTO public."user" VALUES ('Vitaliy', 'Sabekin', 'Neftekamsk', '12aa.a145@gmail.com', '2018-12-04 19:50:10+03', 5);
+INSERT INTO public."user" VALUES ('Sasha', 'Kostyanov', 'Liverpool', 'ilovedogs@gmail.com', '2018-12-04 19:50:10+03', 6);
+INSERT INTO public."user" VALUES ('Fanil', 'Offpend', 'Manchester', 'Seconds@gmail.com', '2018-12-04 19:50:10+03', 7);
+INSERT INTO public."user" VALUES ('Kirill', 'Lo', 'NewYork', 'maaal@gmail.com', '2018-12-04 19:50:10+03', 8);
+INSERT INTO public."user" VALUES ('Sasha', 'Alexov', 'NewYork', 'fgaaa@gmail.com', '2018-12-04 19:50:10+03', 9);
+INSERT INTO public."user" VALUES ('Kostya', 'Harew', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 10);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 11);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 12);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 13);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 14);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 15);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 16);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 17);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 18);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 19);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 20);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 21);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 22);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 23);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 24);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 25);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 26);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 27);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 28);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 29);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 30);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 31);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 32);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 33);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 34);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 35);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 36);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 37);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 38);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 39);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 40);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 41);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 42);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 43);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 44);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 45);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 46);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 47);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 48);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 49);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 50);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 51);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 52);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 53);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 54);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 55);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 56);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 57);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 58);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 59);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 60);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 61);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 62);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 63);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 64);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 65);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 66);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 67);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 68);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 69);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 70);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 71);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 72);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 73);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 74);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 75);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 76);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 77);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 78);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 79);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 80);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 81);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 82);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 83);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 84);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 85);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 86);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 87);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 88);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 89);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 90);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 91);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 92);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 93);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 94);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 95);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 96);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 97);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 98);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 99);
+INSERT INTO public."user" VALUES ('Ayrat', 'Big', 'LosAngeles', 'alhrea@gmail.com', '2018-12-04 19:50:10+03', 101);
+INSERT INTO public."user" VALUES ('Aydar', 'Dinarov', 'Kiyv', 'cwefcd@gmail.com', '2018-12-04 19:50:10+03', 102);
+INSERT INTO public."user" VALUES ('Vladimir', 'Matveev', 'Minsk', 'rehryjt@gmail.com', '2018-12-04 19:50:10+03', 103);
+INSERT INTO public."user" VALUES ('Dmitiy', 'Edvokhin', 'Kazan', '435hhnbrhyj@gmail.com', '2018-12-04 19:50:10+03', 104);
+INSERT INTO public."user" VALUES ('Lada', 'Solncev', 'Kiyv', 'ertbh5j67k8543@gmail.com', '2018-12-04 19:50:10+03', 105);
+INSERT INTO public."user" VALUES ('Yulia', 'Wagner', 'LosAngeles', 'regtdrsgth53@gmail.com', '2018-12-04 19:50:10+03', 106);
+INSERT INTO public."user" VALUES ('Natalia', 'Polin', 'Kazan', 'egfer5h@gmail.com', '2018-12-04 19:50:10+03', 107);
+INSERT INTO public."user" VALUES ('Darina', 'Polter', 'Moscow', 'efrtgjy7rewsrt@gmail.com', '2018-12-04 19:50:10+03', 108);
+INSERT INTO public."user" VALUES ('Sasha', 'Logh', 'Kazan', 'rgtbfg@gmail.com', '2018-12-04 19:50:10+03', 109);
+INSERT INTO public."user" VALUES ('Andrew', 'Asdes', 'Kiyv', 'regtg@gmail.com', '2018-12-04 19:50:10+03', 110);
+
+
+--
+-- Name: post_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.post_id_seq', 38, true);
+
+
+--
+-- Name: tag_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.tag_id_seq', 16, true);
+
+
+--
+-- Name: user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.user_id_seq', 110, true);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
