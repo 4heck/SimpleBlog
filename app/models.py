@@ -34,6 +34,15 @@ class Post(db.Model):
     def __repr__(self):
         return '<Post id: {}, title: {}>'.format(self.id, self.title)
 
+    def to_dict(self):
+        dict = {
+        'id': self.id,
+        'title': self.title,
+        'body': self.body,
+        'slug': self.slug,
+        'created': str(self.created)
+        }
+        return dict
 
 class Tag(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -47,6 +56,13 @@ class Tag(db.Model):
     def __repr__(self):
         return '<Tag id: {}, name: {}>'.format(self.id, self.name)
 
+    def to_dict(self):
+        dict = {
+        'id': self.id,
+        'name': self.name,
+        'slug': self.slug,
+        }
+        return dict
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -58,3 +74,14 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User id: {}, name: {}, surname: {}>'.format(self.id, self.name, self.surname)
+
+    def to_dict(self):
+        dict = {
+        'id': self.id,
+        'name': self.name,
+        'surname': self.surname,
+        'city': self.city,
+        'email': self.email,
+        'created_account': str(self.created_account)
+        }
+        return dict

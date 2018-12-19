@@ -2,6 +2,7 @@ from app import app
 from models import Tag
 from flask import jsonify
 from flask import request
+import json
 from app import db
 
 
@@ -41,3 +42,18 @@ def api_tag_delete(id):
     db.session.delete(tag)
     db.session.commit()
     return jsonify()
+
+
+@app.route('/api/tag/<id>', methods=['PUT'])
+def api_tag_update(id):
+    updated_tag = request.get_json()
+    tags_to_update = Tag.query.filter_by(id=id)
+    if not tags_to_update:
+        abort(404)
+    data = json.loads(request.get_data())
+    tag_to_update = tags_to_update[0]
+    tag_to_update = db.session.query(Tag).filter_by(id = id).first()
+    tag_to_update.name = data['name']
+    tag_to_update.slug = data['slug']
+    db.session.commit()
+    return jsonify(tag_to_update.to_dict())

@@ -1,13 +1,16 @@
 from app import app
 from models import Post
+from models import Tag
 from flask import jsonify
 from flask import request
+import json
 from app import db
 
 
 @app.route('/api/post', methods=['GET'])
 def api_post_get():
     posts = Post.query.all()
+    tags = Tag.query.all()
     posts_json = [{"id": post.id, "title": post.title, "body": post.body, "slug": post.slug, "created": post.created}
                   for post in posts]
     return jsonify(posts_json)
@@ -50,12 +53,12 @@ def api_post_update(id):
     posts_to_update = Post.query.filter_by(id=id)
     if not posts_to_update:
         abort(404)
+    data = json.loads(request.get_data())
     post_to_update = posts_to_update[0]
-    post_to_update.title = updated_post["title"]
-    post_to_update.generate_slug()
-    post_to_update.body = updated_post["body"]
-    db.session.add(updated_post)
+    post_to_update = db.session.query(Post).filter_by(id = id).first()
+    post_to_update.title = data['title']
+    post_to_update.body = data['body']
+    post_to_update.slug = data['slug']
+    post_to_update.created = data['created']
     db.session.commit()
-    post = post_to_update
-    post_json = {"id": post.id, "title": post.title, "body": post.body, "slug": post.slug, "created": post.created}
-    return jsonify(post_json)
+    return jsonify(post_to_update.to_dict())
