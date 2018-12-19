@@ -1,5 +1,6 @@
 from app import app
 from models import User
+from flask import render_template
 from flask import jsonify
 from flask import request
 import json
@@ -16,12 +17,12 @@ def api_user_get():
 @app.route('/api/user/<id>', methods=['GET'])
 def api_user_get_id(id):
     users = User.query.filter_by(id=id)
-    if not users:
-        abort(404)
-    user = users[0]
-    user_json = {"id": user.id, "name": user.name, "surname": user.surname, "city": user.city, "email": user.email, "created_account": user.created_account}
-    return jsonify(user_json)
-
+    try:
+        user = users[0]
+        user_json = {"id": user.id, "name": user.name, "surname": user.surname, "city": user.city, "email": user.email, "created_account": user.created_account}
+        return jsonify(user_json)
+    except:
+        return render_template('404.html')
 
 @app.route('/api/user', methods=['POST'])
 def api_user_insert():
@@ -36,26 +37,28 @@ def api_user_insert():
 @app.route('/api/user/<id>', methods=['DELETE'])
 def api_user_delete(id):
     users = User.query.filter_by(id=id)
-    if not users:
-        abort(404)
-    user = users[0]
-    db.session.delete(user)
-    db.session.commit()
-    return jsonify()
+    try:
+        user = users[0]
+        db.session.delete(user)
+        db.session.commit()
+        return jsonify()
+    except: 
+        return render_template('404.html')
 
 @app.route('/api/user/<id>', methods=['PUT'])
 def api_user_update(id):
     updated_user = request.get_json()
     users_to_update = User.query.filter_by(id=id)
-    if not users_to_update:
-        abort(404)
-    data = json.loads(request.get_data())
-    user_to_update = users_to_update[0]
-    user_to_update = db.session.query(User).filter_by(id = id).first()
-    user_to_update.name = data['name']
-    user_to_update.surname = data['surname']
-    user_to_update.city = data['city']
-    user_to_update.email = data['email']
-    user_to_update.created_account = data['created_account']
-    db.session.commit()
-    return jsonify(user_to_update.to_dict())
+    try:
+        data = json.loads(request.get_data())
+        user_to_update = users_to_update[0]
+        user_to_update = db.session.query(User).filter_by(id = id).first()
+        user_to_update.name = data['name']
+        user_to_update.surname = data['surname']
+        user_to_update.city = data['city']
+        user_to_update.email = data['email']
+        user_to_update.created_account = data['created_account']
+        db.session.commit()
+        return jsonify(user_to_update.to_dict())
+    except:
+        return render_template('404.html')
