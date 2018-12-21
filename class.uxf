@@ -1,0 +1,62 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>389</x><y>611</y><w>359</w><h>89</h></coordinates><panel_attributes>Config
+--
++ SECRET_KEY : String
++ SQLALCHEMY_DATABASE_URI : String
++ SQLALCHEMY_TRACK_MODIFICATIONS : Boolean
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>499</x><y>261</y><w>119</w><h>99</h></coordinates><panel_attributes>models
+--
++ Post
++ Tag
++ User
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>470</y><w>250</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;230;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>271</y><w>300</w><h>119</h></coordinates><panel_attributes>User
+--
++ id : Integer
++ firstname:String 
++ surname:String
++ email: Integer
++ city: String
++ street: String
++ created_account: String
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>151</y><w>229</w><h>89</h></coordinates><panel_attributes>Tag
+--
++ id : Integer
++ name : String
++ slug: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>419</x><y>460</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>541</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>190</y><w>230</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>210;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>311</y><w>230</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>450</y><w>99</w><h>40</h></coordinates><panel_attributes>main
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>489</x><y>450</y><w>140</w><h>99</h></coordinates><panel_attributes>app
+--
++ app : Flask
++ db : SQLAlchemy
++db: Migrate
++app: Manager
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>350</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>301</y><w>260</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;240;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>849</x><y>250</y><w>170</w><h>260</h></coordinates><panel_attributes>api
+--
+--
++ api_post_get() : JSON
++ api_post_get_id : JSON
++ api_post_insert: JSON
++ api_post_delete(id) : JSON
++ api_post_update(id): JSON
++ api_tag_get() : JSON
++ api_tag_get_id(id): : JSON
++ api_tag_insert(): JSON
++ api_tag_delete(id): : JSON
++ api_tag_update(id): JSON
++ api_user_get() : JSON
++ api_user_get_id(id): JSON
++ api_user_insert() : JSON
++ api_user_delete(id) : JSON
++ api_user_update(id): JSON
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>120</y><w>190</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>170;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>0</y><w>160</w><h>129</h></coordinates><panel_attributes>Post
+--
++ id : Integer
++ title : String
++ slug : String
++ body : String
++ created : timestamp
++ user : Integer
+--</panel_attributes><additional_attributes></additional_attributes></element></diagram>

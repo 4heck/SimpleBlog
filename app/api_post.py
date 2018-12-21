@@ -12,7 +12,7 @@ from app import db
 def api_post_get():
     posts = Post.query.all()
     tags = Tag.query.all()
-    posts_json = [{"id": post.id, "title": post.title, "body": post.body, "slug": post.slug, "created": post.created}
+    posts_json = [{"id": post.id, "title": post.title, "body": post.body, "slug": post.slug, "created": post.created, "user": post.user}
                   for post in posts]
     return jsonify(posts_json)
 
@@ -57,6 +57,8 @@ def api_post_update(id):
         data = json.loads(request.get_data())
         post_to_update = posts_to_update[0]
         post_to_update = db.session.query(Post).filter_by(id = id).first()
+        if not post_to_update:
+            abort(404)
         post_to_update.title = data['title']
         post_to_update.body = data['body']
         post_to_update.slug = data['slug']
@@ -64,7 +66,6 @@ def api_post_update(id):
         post_to_update.title = updated_post["title"]
         post_to_update.generate_slug()
         post_to_update.body = updated_post["body"]
-        db.session.save(updated_post)
         db.session.commit()
         return jsonify(post_to_update.to_dict())
     except:

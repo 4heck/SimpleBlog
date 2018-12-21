@@ -20,6 +20,7 @@ class Post(db.Model):
     slug = db.Column(db.String(140), unique=True)
     body = db.Column(db.Text)
     created = db.Column(db.DateTime, default=datetime.now())
+    user = db.Column(db.Integer)
 
     def __init__(self, *args, **kwargs):
         super(Post, self).__init__(*args, **kwargs)
@@ -40,7 +41,8 @@ class Post(db.Model):
         'title': self.title,
         'body': self.body,
         'slug': self.slug,
-        'created': str(self.created)
+        'created': str(self.created),
+        'user': self.user
         }
         return dict
 
